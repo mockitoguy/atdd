@@ -1,0 +1,32 @@
+Exercise 3
+
+-Write BDD scenarios for the given acceptance criteria
+-Use shared google doc (share with 'szczepiq@gmail.com' and 'bbankowski@gmail.com')
+
+1. As a gambler I want to bet on a chosen game so that 
+I can win money.
+
+-if the bet is accurate the gambler can win stake*bet 
+-if the bet is not accurate gambler wins 0
+-cannot bet more than 1000$
+-cannot bet less than 1$
+-cannot bet if the total win is more than 5000$
+
+2. As a gambler I want to pay tax so that Skarbowy is happy
+-the tax is applied to the total win
+-the net win is total-tax
+-the tax is 10%, but not less than 1$
+-rounding down to two decimal places
+-cannot bet if the net win is less than the amount bet
+
+3. As a gambler I want to bet on combined games 
+  so that I can get filthy rich quickly.
+-if the bet is accurate on *all* combined games
+  the gambler can win the multiplication of all stakes
+-if at least one bet fails the gambler wins 0
+-cannot combine bets on the same game in a combined bet
+
+4. As a gambler I want to search for interesting games so that I can bet on those games.
+-it is possible to query for all group games for the given team
+-it is possible to query all semi-finals
+-it is possible to query for opening game and the final

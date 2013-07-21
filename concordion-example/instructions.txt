@@ -1,0 +1,42 @@
+h3. Exercise - concordion test fixture
+
+Setup eclipse:
+1. launch eclipse (jdk should be installed first)
+   -choose some empty dir on your disk for the eclipse workspace
+2. import concordion-example project to eclipse
+   ->File->import->existing projects into eclipse->
+     select the dir with unzipped concordion-example folder   
+3. make sure it builds
+   -there should be no build errors
+   -configuration of the java for the build might be needed
+     -select the project on the left hand
+     -go to project properties via context menu (right click on the project)
+     -configure the Java Build Path->Libraries, configure the JRE system library
+
+Setup idea:
+1. Open project in the IDEA (select the *.ipr)
+2. Build it and make sure there are no build errors
+
+Exercise:
+1. Open 'specs/../GamblerBetting.html' - it's the Concordion specification file.
+2. try to run 'specs/../GamblerBettingTest using junit
+   -open the file
+   -right click on the class name in the editor window->Run as->JUnit test
+3. break the code, re-run and validate the test has failed
+   -go to 'src/../CompletedGame.java'
+   -modify 'calculateWin' method so that it returns an incorrect result
+   -re-run the test (see #4)
+4. fix back the code
+5. open 'specs/../GamblerBetting.html' and implement the TODO scenarios
+6. make sure the all scenarios pass
+
+Extra exercises:
+
+1. Use concordion's '#TEXT' variable:
+  explode configureStakes() method into 3 separate setters
+  use concordion:execute="setWinStake(#TEXT)" to configure the stakes.
+  More info here: http://www.concordion.org/Tutorial.html
+2. Refactor the html to the tabular format in the specification by example spirit
+
+
+

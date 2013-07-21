@@ -1,0 +1,26 @@
+Exercise 2: 
+-Write missing acceptance criteria
+-Use shared google doc
+
+User stories:
+
+1. As a gambler I want to bet on a chosen game so that I can win money.
+-if the bet is accurate the gambler can win stake*bet
+-cannot bet more than 1000$
+-
+-
+
+2. As a gambler I want to search for interesting games so that I can bet on those games.
+-
+-
+-
+
+3. As a gambler I want to bet on combined games so that I can get filthy rich quickly.
+-
+-
+-
+
+4. As a gambler I want to know the deducted tax so that I'm not surprised with the net win.
+-
+-
+-

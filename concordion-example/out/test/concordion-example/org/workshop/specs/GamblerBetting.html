@@ -1,0 +1,47 @@
+<html xmlns:concordion="http://www.concordion.org/2007/concordion">
+<link href="../css/concordion.css" rel="stylesheet" type="text/css" />
+<body>
+
+    <h1>Gambler betting</h1>
+
+    <p>
+    	Gambler may win (and thus play some more and finally lose ;).
+    	Gambler may also lose and make us prosper!
+    </p>
+
+    <div class="example">
+
+		<h3>Gambler wins</h3>
+		
+        <p>Given stakes are 
+        	<b concordion:set="#win"> 1.50</b>,
+        	<b concordion:set="#draw"> 2.00</b>,
+        	<b concordion:set="#lose"> 3.00</b>.
+        	<span concordion:execute="configureStakes(#win, #draw, #lose)" />
+        </p>
+        <p>And gambler bets
+        	<b concordion:set="#stake">5</b>$
+        	on <b concordion:set="#bet">draw</b>.
+        </p>
+        <p>When the result is
+       		<b concordion:set="#result">draw</b>.
+       		<span concordion:execute="setResult(#result)" />
+       	</p>
+		<p>Then gambler wins <b concordion:assertEquals="calculateWin(#stake, #bet)">10.0</b>$.</p>
+        
+    </div>
+    
+    <div class="example">
+        <h3>Gambler loses - TODO</h3>
+    </div>
+
+    <div class="example">
+        <h3>Gambler bets on win and wins - TODO</h3>
+    </div>
+
+    <div class="example">
+        <h3>Gambler bets on lose and wins - TODO</h3>
+    </div>
+                   
+</body>
+</html>
